@@ -1,61 +1,55 @@
-# Site Info
-title: DS Blog
-tagline: ''
-description: 'blog for tech/daily life'
-url: http://dsincerity.github.io
-#logo: '/public/logo.png'
-encoding: utf-8
+# Permalinks
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
 
-# Site configurations
-gems:
-  - jekyll-paginate
-markdown: kramdown
-kramdown:
-  input: GFM
-excerpt_separator: "<!-- more -->"
-sass:
-  style: compressed
-  sass_dir: _scss    
-paginate: 5
-paginate_path: '/blog/page:num'
-permalink: pretty
-version: 1.0.0
+# Setup
+title:               DSincerity's blog
+tagline:             'Tech & Life'
+description:         Kwon Deuk Sin<br>Problem Solver with Data<br>Data Scientist/ML Engineer
+url:                 https://DSincerity.github.io
+baseurl:             ''
+paginate:            5
 
 # About/contact
 author:
-  name: brian.k
-  description: <strong>Kwon Deuk Sin</strong><br><strong> Problem Solver with Data</strong><br>
-               <strong>Data Scientist/ML Engineer @SK Telecom</strong>
-  gravatar: aa88f7c64c7cbc6c3e3381367c14cfe2 # md5 hash of your email address
+  name:              KWON DEUK SIN
+  #url:               https://hoisharka.github.com
+  email:             kds0281@gmail.com
+  gravatar:          aa88f7c64c7cbc6c3e3381367c14cfe2
   contact:
     linkedin:  https://www.linkedin.com/in/deuk-sin-kwon-268179153/
-    #github:    
+    #github:  https://github.com/DSincerity
     #facebook:  
     #twitter:  <hide>
     #weibo:    <hide>
     email:    mailto:kds0281@gmail.com
+    
+# Custom vars
+version:             1.0.0
 
-# Navigation (2nd level links supported)
-nav:
-  Home:           
-    - '/'
-  Contents:           
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
-  About:          
-    - '/about/'
+plugins: [jekyll-paginate]
 
-# Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+# Tag setting
+#collections:
+#  tags:
+#    output: true
+#    permalink: /tags/:path/
 
-hero:
-  image: https://ratsgo.github.io/public/img/picture.JPG
-  caption: Original Artwork &copy; Pablo Picasso. Girl before a Mirror. Boisgeloup, March 1932. Oil on canvas
+#defaults:
+#  - scope:
+#      path: ''
+#      type: tags
+#    values:
+#      layout: tag
 
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: 'UA-93172815-1' # leave blank if you don't want google analytics
-disqus_short_name: 'dsincerity' # leave blank if you don't want disqus
+google_analytics:
+  ua: 'UA-109898110-1'
 
+github:
+  repo: 'https://github.com/hoisharka/hoisharka.github.io'
+
+category_dir: category/
+tag_dir: tag/
+excerpt_separator: ""
+disqus_short_name: dsincerity
