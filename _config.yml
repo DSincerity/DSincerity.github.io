@@ -44,7 +44,7 @@ plugins: [jekyll-paginate]
 #      layout: tag
 
 google_analytics:
-  ua: 'UA-109898110-1'
+  ua: 'UA-162992420-1'
 
 github:
   repo: 'https://github.com/hoisharka/hoisharka.github.io'
